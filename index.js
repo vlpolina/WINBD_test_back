@@ -1,0 +1,14 @@
+import express from 'express'
+import cors from 'cors'
+import router from './router.js'
+
+const PORT = 3011;
+const app = express()
+
+app.use(cors({
+   origin: [["http://localhost:3011"], ["http://localhost:63342"]]
+}))
+app.use(express.json())
+app.use('/', router)
+
+app.listen(PORT, () => console.log('Server started on port ' + PORT))
