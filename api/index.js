@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import router from "./router.js";
 
-const PORT = process.env.PORT || 3011;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 /*app.use(
@@ -19,4 +19,4 @@ app.use("/", router);
 
 app.listen(PORT, () => console.log("Server started on port " + PORT));
 
-module.exports = app;
+export default app;

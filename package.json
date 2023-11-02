@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node ./api/index.js",
-    "dev": "nodemon ./api/index.js"
+    "dev": "nodemon ./api/index.js",
+    "versel-build": "node ./api/index.js"
   },
   "keywords": [],
   "author": "",
