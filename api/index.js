@@ -5,7 +5,7 @@ import router from "./router.js";
 const PORT = process.env.PORT || 3011;
 const app = express();
 
-app.use(
+/*app.use(
   cors({
     origin: [
       ["http://localhost:3011"],
@@ -13,7 +13,7 @@ app.use(
       ["https://winbd-test-back.vercel.app/"],
     ],
   })
-);
+);*/
 app.use(express.json());
 app.use("/", router);
 
